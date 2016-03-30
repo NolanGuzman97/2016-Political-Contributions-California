@@ -7,7 +7,10 @@ donation_list = []
 rep_list = []
 dem_list = []
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd7dcff9b1dbb07b38b4d6e4137ba49c0f26b148
 #Reading CSV file
 with open('902xx.csv', 'rb') as testing:
     reader = csv.reader(testing)
@@ -28,10 +31,13 @@ for x in range(0, list_length):
         dem_list.append(donation_list[x])
     else:
         rep_list.append(donation_list[x])
+<<<<<<< HEAD
 
 #values = [sum(dem_list), sum(rep_list)]
 
 
+=======
+>>>>>>> dd7dcff9b1dbb07b38b4d6e4137ba49c0f26b148
         
 print dem_list
 print rep_list        
@@ -44,6 +50,7 @@ rep_list = map(float, rep_list)
 dem_amount = sum(dem_list)
 rep_amount = sum(rep_list)
 
+<<<<<<< HEAD
 values=[dem_amount, rep_amount]
 
 def make_autopct(values):
@@ -54,6 +61,8 @@ def make_autopct(values):
     return my_autopct
 
 
+=======
+>>>>>>> dd7dcff9b1dbb07b38b4d6e4137ba49c0f26b148
 print dem_amount
 print rep_amount
 
@@ -66,6 +75,7 @@ cols = ['b', 'r']
 plt.pie(money_list, 
         labels = parties_list, 
         colors = cols, 
+<<<<<<< HEAD
         shadow = False, 
         startangle = 90,
         autopct = make_autopct(values)
@@ -73,3 +83,10 @@ plt.pie(money_list,
         )
 plt.title('Testing Party Donations')
 plt.show()
+=======
+        shadow = True, 
+        startangle = 90,
+        autopct = '%1.1f%%')
+plt.title('Testing Party Donations')
+plt.show()
+>>>>>>> dd7dcff9b1dbb07b38b4d6e4137ba49c0f26b148
