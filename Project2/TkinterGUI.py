@@ -1,11 +1,11 @@
 from tkinter import Tk, Label, Button
 import os
+#import ideone_DcdVWE
 
 
 def attempt():
-	os.startfile(r'C:\Users\Nolan\ProjectGit\Project2\900xx.csv')
-
-	
+	ideone_DcdVWE.drawpiechart()
+	#os.startfile(r'C:\Users\Nolan\ProjectGit\Project2\ideone_DcdVWE.py')
 
 
 class California:
