@@ -1,4 +1,4 @@
-import csv
+#import csv
 import matplotlib.pyplot as plt
 
 #Declaring lists for different amounts
@@ -8,8 +8,10 @@ rep_list = []
 dem_list = []
 
 
+	
+
 #Reading CSV file
-with open('902xx.csv', 'rb') as testing:
+with open(r'C:\Users\Nolan\ProjectGit\Project2\902xx.csv', 'rb') as testing:
     reader = csv.reader(testing)
     for row in reader:
         party_list.append(row[0])
@@ -20,9 +22,9 @@ party_list.remove('cand_nm')
 donation_list.remove('contb_receipt_amt')   
 
 list_length = len(donation_list)
-print list_length
+print(list_length)
 
-#assigning dem and rep donations in separate lists
+#assigning dem and rep donations in seprate lists
 for x in range(0, list_length):
     if party_list[x] == 'Democrat':
         dem_list.append(donation_list[x])
@@ -30,8 +32,8 @@ for x in range(0, list_length):
         rep_list.append(donation_list[x])
 
         
-print dem_list
-print rep_list        
+print(dem_list)
+print(rep_list )       
 
 #converting string elements into ints
 dem_list = map(float, dem_list)
@@ -53,8 +55,8 @@ def make_autopct(values):
 
 
 
-print dem_amount
-print rep_amount
+print(dem_amount)
+print(rep_amount)
 
 #Setting up the lists necessary for a pie chart
 parties_list = ['Democrat', 'Republican']
