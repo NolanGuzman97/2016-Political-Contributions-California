@@ -26,7 +26,47 @@ print list_length
 for x in range(0, list_length):
     if party_list[x] == 'Democrat':
         dem_list.append(donation_list[x])
-    else:
+    elif party_list[x] == 'Clinton, Hillary Rodham':
+        dem_list.append(donation_list[x])
+    elif party_list[x] == 'O\'Malley, Martin Joseph':
+        dem_list.append(donation_list[x])
+    elif party_list[x] == 'Sanders, Bernard':
+        dem_list.append(donation_list[x])
+    elif party_list[x] == 'Webb, James Henry Jr.':
+        dem_list.append(donation_list[x])
+    elif party_list[x] == 'Carson, Benjamin S.':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Rubio, Marco':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Trump, Donald J.':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Walker, Scott':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Paul, Rand':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Perry, James R. (Rick)':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Graham, Lindsey O.':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Fiorina, Carly':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Cruz, Rafael Edward \'Ted\'':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Bush, Jeb':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Kasich, John R.':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Huckabee, Mike':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Pataki, George E.':
+        rep_list.append(donation_list[x])  
+    elif party_list[x] == 'Jindal, Bobby':
+        rep_list.append(donation_list[x]) 
+    elif party_list[x] == 'Santorum, Richard J.':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Christie, Christopher J.':
+        rep_list.append(donation_list[x])
+    elif party_list[x] == 'Republican':
         rep_list.append(donation_list[x])
 
         
